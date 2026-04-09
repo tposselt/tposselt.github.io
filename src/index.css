@@ -82,6 +82,16 @@ p {
     margin: 0;
 }
 
+.a-little-bigger {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.a-lot-bigger {
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
 p.faint {
     color: var(--text-faint);
     font-weight: 700;
@@ -141,6 +151,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* Stole these box shadow values from https://www.w3schools.com/css/css3_shadows_box.asp */
@@ -150,8 +161,27 @@ main {
     width: 25rem;
 }
 
+.card.square {
+    aspect-ratio: 1/1;
+}
+
 .card.left {
     text-align: left;
+}
+
+.split-2-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.split-2-1 .left-side {
+    width: 66%;
+}
+
+.split-2-1 .right-side {
+    width: 33%;
 }
 
 hr.rounded {
@@ -161,9 +191,25 @@ hr.rounded {
     border-radius: 5px;
 }
 
-.project-card img {
+img {
     border-radius: 20px;
+}
+
+.card-image {
+    aspect-ratio: 1/1;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-header);
+    border-radius: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Stole these box shadow values from https://www.w3schools.com/css/css3_shadows_box.asp */
+}
+
+.project-card img {
     width: 100%;
     aspect-ratio: 16/9;
 }
 
+.quarter-size {
+    max-width: 25%;
+}

@@ -63,28 +63,13 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+    font-family: var(--heading);
+    font-weight: 700;
+    color: var(--text-highlight);
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  font-size: 2rem;
 }
 
 h3 {
@@ -120,6 +105,11 @@ main {
     justify-content: center;
 }
 
+.footer a {
+    color: var(--text);
+    padding-left: 1rem;
+}
+
 .nav-link {
     padding: 0 1rem 0 1rem;
     text-decoration: none;
@@ -144,17 +134,24 @@ main {
     justify-content: center;
 }
 
-.project-card {
+.card {
     margin: 1.5rem;
     padding: 1.5rem;
-    width: 25rem;
     background: var(--bg-header);
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* Stole these box shadow values from https://www.w3schools.com/css/css3_shadows_box.asp */
+}
+
+.card.project-card {
+    width: 25rem;
+}
+
+.card.left {
+    text-align: left;
 }
 
 hr.rounded {

@@ -11,5 +11,11 @@ export const projectList: Record<string, Project> = {
         role: "Sole developer",
         madeFor: "Personal project",
         technologies: "C#, Unity, Aseprite, Audacity",
+    },
+    udig: {
+        projectName: "United for Decency in Government Website",
+        role: "Full-stack developer and team lead",
+        madeFor: "United for Decency in Government",
+        technologies: "React, TypeScript, MongoDB, Tailwind, HTML/CSS",
     }
 }

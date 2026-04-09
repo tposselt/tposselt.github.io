@@ -165,7 +165,7 @@ hr.rounded {
 }
 
 .project-card img {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
     aspect-ratio: 16/9;
 }

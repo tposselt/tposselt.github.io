@@ -21,9 +21,6 @@ export default function Home() {
                         more about what I'm interested in! Also take a look at my <Link to="/projects" className="faint"> portfolio </Link>
                         to see all the cool stuff I've worked on!
                     </p>
-                    <br/>
-                    <p className="a-little-bigger">
-                    </p>
                 </div>
                 <img src={itsme} className="card-image right-side"/>
             </div>

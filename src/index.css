@@ -98,7 +98,10 @@ p.faint {
 }
 
 main {
+    margin: 0 3rem 0 3rem;
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .header {
@@ -142,9 +145,11 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .card {
+    height: fit-content;
     margin: 1.5rem;
     padding: 1.5rem;
     background: var(--bg-header);
@@ -193,6 +198,16 @@ hr.rounded {
 
 img {
     border-radius: 20px;
+}
+
+.icon-container {
+    justify-content: center;
+    display: inline-flex;
+}
+
+.icon {
+    margin: 1rem;
+    width: 5%;
 }
 
 .card-image {
